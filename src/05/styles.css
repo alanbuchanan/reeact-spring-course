@@ -1,0 +1,40 @@
+.app {
+  background: linear-gradient(mediumaquamarine, seagreen);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 90%;
+  margin-bottom: 12px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid grey;
+}
+
+.name {
+  font-weight: bold;
+  text-align: left;
+}
+
+.country {
+  text-align: right;
+}
+
+.description {
+  font-style: italic;
+  text-align: center;
+}

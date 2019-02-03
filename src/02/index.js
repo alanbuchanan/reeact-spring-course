@@ -13,7 +13,7 @@ const items = times(5, i => ({
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <ul>
           <Trail
             items={items}

@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(hotpink, yellow);
+}
+
+.menu {
+  margin: 0 23%;
+  background: white;
+  border: 1px solid grey;
+}
+
+.menuItem {
+  padding: 20px;
+}

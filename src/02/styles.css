@@ -1,25 +1,10 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
-}
-
-html,
 body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
   background: linear-gradient(dodgerblue, hotpink);
   background-attachment: fixed;
 }
 
-ul {
-  padding: 0;
-  list-style-type: none;
-}
-
 li {
+  box-sizing: border-box;
   margin: 40px;
   padding: 20px;
   background-color: white;

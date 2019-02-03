@@ -25,7 +25,7 @@ const Wheel = ({ stroke }) => (
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <h2>Pace</h2>
       <Spring
         from={{ stroke: 0 }}

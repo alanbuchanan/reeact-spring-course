@@ -1,0 +1,31 @@
+.app {
+  background: linear-gradient(lightblue, mediumaquamarine);
+}
+
+ul {
+  width: 200px;
+  padding: 10px;
+  list-style-type: none;
+  background: white;
+}
+
+li {
+  padding: 10px;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}

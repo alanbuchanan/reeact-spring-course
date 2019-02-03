@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigate {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.navigate-left {
+  left: 0;
+}
+
+.navigate-right {
+  right: 0;
+}
+
+.imgTextContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 80px;
+}

@@ -1,0 +1,38 @@
+:root {
+  --baseUnit: 22px;
+}
+
+body {
+  background: linear-gradient(mediumseagreen, dodgerblue);
+}
+
+li {
+  box-sizing: border-box;
+  margin: var(--baseUnit);
+  padding: var(--baseUnit);
+  overflow: hidden;
+  text-align: left;
+  background-color: white;
+  cursor: pointer;
+}
+
+h2 {
+  margin: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.listText {
+  padding: var(--baseUnit) 0 0 var(--baseUnit);
+}
