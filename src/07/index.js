@@ -20,23 +20,23 @@ const Page = ({
     <ParallaxLayer
       offset={idx}
       speed={0}
-      className={cx('layer', `layer${idx}`)}
+      className={cx('layer', `layer-${idx}`)}
     />
     <ParallaxLayer
       offset={idx}
       speed={imageSpeed}
-      className={cx('layerImage', `layerImage${idx}`)}
+      className={cx('layer-image', `layer-image${idx}`)}
     >
       <img src={imgLink} alt={imgDescription} width={150} />
     </ParallaxLayer>
     <ParallaxLayer
       offset={idx}
       speed={textSpeed}
-      className="layerContent"
+      className="layer-content"
       scrolling
     >
       {title && <h2>{title}</h2>}
-      <p>{description}</p>
+      <p className="description">{description}</p>
     </ParallaxLayer>
   </Fragment>
 );

@@ -45,7 +45,7 @@ class App extends Component {
             (props => (
               <div style={props} className="menu">
                 {menuItems.map(menuItem => (
-                  <div className="menuItem">{menuItem}</div>
+                  <div className="menu-item">{menuItem}</div>
                 ))}
               </div>
             ))

@@ -22,7 +22,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.topContainer {
+.top-container {
   display: flex;
   justify-content: space-between;
 }
@@ -33,6 +33,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.listText {
+.list-text {
   padding: var(--baseUnit) 0 0 var(--baseUnit);
 }

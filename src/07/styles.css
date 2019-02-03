@@ -1,49 +1,49 @@
-.layer0 {
+.layer-0 {
   background-color: #eee;
 }
 
-.layer1 {
+.layer-1 {
   background-color: #ddd;
 }
 
-.layer2 {
+.layer-2 {
   background-color: #eee;
 }
 
-p {
-  padding: 0 12px;
-  color: white;
-  background-color: hotpink;
+.layer-image {
+  position: absolute;
+  top: 90px;
+  width: 100px;
 }
 
-.layerContent {
+.layer-image0 img {
+  transform: rotate(-5deg);
+}
+
+.layer-image1 img {
+  transform: rotate(5deg);
+}
+
+.layer-image2 img {
+  transform: rotate(-3deg);
+}
+
+.layer-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.layerImage {
-  position: absolute;
-  top: 90px;
-  width: 100px;
+.description {
+  padding: 0 12px;
+  color: white;
+  background-color: hotpink;
 }
 
 img {
   padding: 6px 6px 32px;
   border: 1px solid black;
   box-shadow: 0px 4px 5px 2px #bbb;
-}
-
-.layerImage0 img {
-  transform: rotate(-5deg);
-}
-
-.layerImage1 img {
-  transform: rotate(5deg);
-}
-
-.layerImage2 img {
-  transform: rotate(-3deg);
 }
 

@@ -117,7 +117,7 @@ const AppRouter = () => (
   </Router>
 );
 
-const Page = ({ match: { params }, style, children }) => (
+const Page = ({ style, children }) => (
   <div style={style}>{children}</div>
 );
 

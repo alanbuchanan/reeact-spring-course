@@ -5,7 +5,7 @@ import './styles.css';
 function App() {
   return (
     <div className="app">
-      <div className="title">New Customer offer</div>
+      <h2 className="title">New Customer offer</h2>
       <div className="offer">40% off</div>
       <Spring
         delay={500}
@@ -18,7 +18,7 @@ function App() {
         to={{ transform: 'translateY(0%) scale(1)' }}
       >
         {props => (
-          <button style={props} className="ctaButton">
+          <button style={props}>
             Shop Now
           </button>
         )}

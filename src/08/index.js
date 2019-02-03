@@ -29,9 +29,7 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    // setTimeout(() => {
     this.setState({ activeName: 'Ipsum' });
-    // }, 500);
   }
 
   handleItemClick = name => {
@@ -47,7 +45,6 @@ class App extends React.Component {
         Category: {item.category}
       </div>,
       <StarRatingComponent
-        name="bert"
         starCount={5}
         value={item.rating}
       />
@@ -72,7 +69,7 @@ class App extends React.Component {
                     this.handleItemClick(item.title)
                   }
                 >
-                  <div className="topContainer">
+                  <div className="top-container">
                     <h2>{item.title}</h2>
                     <div>
                       {this.state.activeName === item.title
@@ -95,7 +92,7 @@ class App extends React.Component {
                     {newItem => newProps => (
                       <animated.div
                         style={newProps}
-                        className="listText"
+                        className="list-text"
                       >
                         {newItem}
                       </animated.div>
