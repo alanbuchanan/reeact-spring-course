@@ -9,18 +9,18 @@ body {
 }
 
 body {
+  margin: 0;
   background: linear-gradient(dodgerblue, hotpink);
   background-attachment: fixed;
-  margin: 0;
 }
 
 ul {
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 
 li {
-  background-color: white;
-  padding: 20px;
   margin: 40px;
+  padding: 20px;
+  background-color: white;
 }

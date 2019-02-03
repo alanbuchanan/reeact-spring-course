@@ -18,11 +18,16 @@ class App extends Component {
           <Trail
             items={items}
             keys={item => item.key}
-            from={{ opacity: 0, transform: 'translateY(-50%)' }}
+            from={{
+              opacity: 0,
+              transform: 'translateY(-50%)'
+            }}
             to={{ opacity: 1, transform: 'translateY(0%)' }}
             config={config.wobbly}
           >
-            {item => props => <li style={props}>{item.component}</li>}
+            {item => props => (
+              <li style={props}>{item.component}</li>
+            )}
           </Trail>
         </ul>
       </div>
