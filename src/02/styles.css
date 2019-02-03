@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(dodgerblue, hotpink);
+  background-attachment: fixed;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  padding: 20px;
+  margin: 40px;
+}
