@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Transition } from 'react-spring';
 import uuid from 'uuid';
-import casual from 'casual';
+import faker from 'faker';
 import times from 'lodash.times';
 import './styles.css';
 
 const data = times(4, () => ({
   key: uuid(),
-  name: casual.populate('{{name_prefix}} {{last_name}}'),
-  country: casual.country,
-  description: casual.short_description
+  name: faker.fake('{{name.prefix}} {{name.lastName}}'),
+  country: faker.address.country(),
+  description: faker.lorem.paragraph()
 }));
 
 class App extends Component {
@@ -23,11 +23,9 @@ class App extends Component {
         items: [
           {
             key: uuid(),
-            name: casual.populate(
-              '{{name_prefix}} {{last_name}}'
-            ),
-            country: casual.country,
-            description: casual.short_description
+            name: faker.fake('{{name.prefix}} {{name.lastName}}'),
+            country: faker.address.country(),
+            description: faker.lorem.paragraph()
           },
           ...prevState.items.slice(0, -1)
         ]

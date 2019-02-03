@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "casual": "^1.6.0",
     "classnames": "^2.2.6",
     "d3-ease": "^1.0.5",
     "delay": "^4.1.0",
+    "faker": "^4.1.0",
     "lodash.times": "^4.3.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
