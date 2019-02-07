@@ -11,7 +11,7 @@ const menuItems = [
 
 class App extends Component {
   state = {
-    menuOpen: true
+    menuOpen: false
   };
 
   handleBtnClick = () => {
@@ -29,16 +29,20 @@ class App extends Component {
           reset
           items={this.state.menuOpen}
           from={{
-            opacity: 0,
+
             height: 0,
-            transform: 'translateY(-10%)'
+            overflowY: 'hidden'
           }}
           enter={{
-            opacity: 1,
+
             height: 'auto',
-            transform: 'translate(0%)'
+
           }}
-          leave={{ opacity: 0 }}
+          leave={{
+
+            height: 0,
+
+          }}
         >
           {item =>
             item &&

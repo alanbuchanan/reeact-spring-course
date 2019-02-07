@@ -20,10 +20,11 @@ class App extends Component {
             keys={item => item.key}
             from={{
               opacity: 0,
-              transform: 'translateY(-50%)'
+              transform: 'translateX(-20%)',
+              height: 0,
             }}
-            to={{ opacity: 1, transform: 'translateY(0%)' }}
-            config={config.wobbly}
+            to={{ opacity: 1, transform: 'translateX(0%)', height: 'auto' }}
+            config={config.stiff}
           >
             {item => props => (
               <li style={props}>{item.component}</li>

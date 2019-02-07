@@ -2,7 +2,7 @@ import React from 'react';
 import { Spring, config } from 'react-spring';
 import './styles.css';
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <h2 className="title">New Customer offer</h2>

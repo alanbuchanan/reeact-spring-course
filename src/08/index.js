@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Keyframes, config, animated } from 'react-spring';
 import items from './items';
 import StarRatingComponent from 'react-star-rating-component';
@@ -23,7 +23,7 @@ const ListItemContent = Keyframes.Trail({
   }
 });
 
-class App extends React.Component {
+class App extends Component {
   state = {
     activeName: undefined
   };

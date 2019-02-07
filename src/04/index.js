@@ -1,5 +1,5 @@
-import React from 'react';
-import { Transition, config } from 'react-spring';
+import React, { Component } from 'react';
+import { Transition } from 'react-spring';
 import cx from 'classnames';
 import './styles.css';
 
@@ -14,7 +14,7 @@ const NavBtn = ({ direction, action }) => (
   </div>
 );
 
-class App extends React.Component {
+class App extends Component {
   state = {
     items: [
       {
@@ -91,7 +91,6 @@ class App extends React.Component {
             opacity: 0
           }}
           items={activeIndex}
-          config={config.stiff}
         >
           {idx => props => (
             <div className="img-text-container" style={props}>

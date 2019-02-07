@@ -1,5 +1,5 @@
-import React from 'react';
-import { Keyframes, config } from 'react-spring';
+import React, { Component } from 'react';
+import { Keyframes } from 'react-spring';
 import delay from 'delay';
 import ReactPlaceholder from 'react-placeholder';
 import './styles.css';
@@ -53,7 +53,7 @@ const MenuItems = Keyframes.Trail({
   }
 });
 
-class App extends React.Component {
+class App extends Component {
   state = {
     menuOpen: false
   };
@@ -70,7 +70,6 @@ class App extends React.Component {
         <button onClick={this.handleBtnClick}>☰</button>
 
         <Menu
-          config={config.gentle}
           unique
           state={this.state.menuOpen ? 'in' : 'out'}
         >
