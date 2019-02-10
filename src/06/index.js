@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, {
+  Component
+} from 'react';
 import { Transition } from 'react-spring';
 import './styles.css';
 
@@ -15,42 +17,63 @@ class App extends Component {
   };
 
   handleBtnClick = () => {
-    this.setState(prevState => ({
-      menuOpen: !prevState.menuOpen
-    }));
+    this.setState(
+      prevState => ({
+        menuOpen: !prevState.menuOpen
+      })
+    );
   };
 
   render() {
     return (
       <div className="app">
-        <button onClick={this.handleBtnClick}>Menu</button>
+        <button
+          onClick={
+            this
+              .handleBtnClick
+          }
+        >
+          Menu
+        </button>
         <Transition
           unique
           reset
-          items={this.state.menuOpen}
+          items={
+            this
+              .state
+              .menuOpen
+          }
           from={{
-
             height: 0,
-            overflowY: 'hidden'
+            overflowY:
+              'hidden'
           }}
           enter={{
-
-            height: 'auto',
-
+            height:
+              'auto'
           }}
           leave={{
-
-            height: 0,
-
+            height: 0
           }}
         >
           {item =>
             item &&
             (props => (
-              <div style={props} className="menu">
-                {menuItems.map(menuItem => (
-                  <div className="menu-item">{menuItem}</div>
-                ))}
+              <div
+                style={
+                  props
+                }
+                className="menu"
+              >
+                {menuItems.map(
+                  menuItem => (
+                    <div className="menu-item">
+                      {
+                        menuItem
+                      }
+                    </div>
+                  )
+                )}
               </div>
             ))
           }

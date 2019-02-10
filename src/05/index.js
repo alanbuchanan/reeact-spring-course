@@ -1,16 +1,23 @@
-import React, { Component } from 'react';
+import React, {
+  Component
+} from 'react';
 import { Transition } from 'react-spring';
 import uuid from 'uuid';
 import faker from 'faker';
 import times from 'lodash.times';
 import './styles.css';
 
-const data = times(4, () => ({
-  key: uuid(),
-  name: faker.fake('{{name.prefix}} {{name.lastName}}'),
-  country: faker.address.country(),
-  description: faker.lorem.paragraph()
-}));
+const data = times(
+  4,
+  () => ({
+    key: uuid(),
+    name: faker.fake(
+      '{{name.prefix}} {{name.lastName}}'
+    ),
+    country: faker.address.country(),
+    description: faker.lorem.paragraph()
+  })
+);
 
 class App extends Component {
   state = {
@@ -18,20 +25,30 @@ class App extends Component {
   };
 
   componentDidMount() {
-    setTimeout(() => {
-      this.setState(prevState => ({
-        items: [
-          {
-            key: uuid(),
-            name: faker.fake('{{name.prefix}} {{name.lastName}}'),
-            country: faker.address.country(),
-            description: faker.lorem.paragraph()
-          },
-          ...prevState.items.slice(0, -1)
-        ]
-      }));
-      this.componentDidMount();
-    }, 3000);
+    setTimeout(
+      () => {
+        this.setState(
+          prevState => ({
+            items: [
+              {
+                key: uuid(),
+                name: faker.fake(
+                  '{{name.prefix}} {{name.lastName}}'
+                ),
+                country: faker.address.country(),
+                description: faker.lorem.paragraph()
+              },
+              ...prevState.items.slice(
+                0,
+                -1
+              )
+            ]
+          })
+        );
+        this.componentDidMount();
+      },
+      3000
+    );
   }
 
   render() {
@@ -39,9 +56,17 @@ class App extends Component {
       <div className="app">
         <div className="cards">
           <Transition
-            initial={null}
-            items={this.state.items}
-            keys={item => item.key}
+            initial={
+              null
+            }
+            items={
+              this
+                .state
+                .items
+            }
+            keys={item =>
+              item.key
+            }
             from={{
               transform:
                 'translateY(-100%) scale(2) rotate(10deg)',
@@ -51,7 +76,8 @@ class App extends Component {
             enter={{
               transform:
                 'translateY(0%) scale(1) rotate(0deg)',
-              height: 'auto',
+              height:
+                'auto',
               opacity: 1
             }}
             leave={{
@@ -61,15 +87,30 @@ class App extends Component {
             }}
           >
             {item => props => (
-              <div style={props} className="card">
+              <div
+                style={
+                  props
+                }
+                className="card"
+              >
                 <div className="header">
-                  <div className="name">{item.name}</div>
+                  <div className="name">
+                    {
+                      item.name
+                    }
+                  </div>
                   <div className="country">
-                    {item.country}
+                    {
+                      item.country
+                    }
                   </div>
                 </div>
                 <blockquote className="description">
-                  "{item.description}"
+                  "
+                  {
+                    item.description
+                  }
+                  "
                 </blockquote>
               </div>
             )}
