@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sarabun');
 
 body {
+  position: relative;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0;
@@ -8,6 +9,7 @@ body {
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-attachment: fixed;
 }
 
 html,
@@ -15,7 +17,6 @@ body,
 #root,
 .app {
   height: 100%;
-  background-attachment: fixed;
 }
 
 ul {

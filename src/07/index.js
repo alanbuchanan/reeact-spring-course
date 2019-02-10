@@ -33,7 +33,6 @@ const Page = ({
       offset={idx}
       speed={textSpeed}
       className="layer-content"
-      scrolling
     >
       {title && <h2>{title}</h2>}
       <p className="description">{description}</p>

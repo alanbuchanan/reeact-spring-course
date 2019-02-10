@@ -31,6 +31,7 @@ const AppRouter = () => (
           </nav>
           <Transition
             keys={location.pathname}
+            config={config.gentle}
             from={{
               opacity: 0,
               transform: 'translateY(-50%) scale(0.5)',
