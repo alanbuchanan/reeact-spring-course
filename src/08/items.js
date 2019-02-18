@@ -3,16 +3,14 @@ export default [
     title: 'Lorem',
     text:
       'owjfe ioioj iojioje oi iowjee ewo ewji weifo ewio jwi ofewjf weio weifj eiwjfwoj eioj ioefj iwofj iowjeio jweiof jweiofj iwojf ioj ow ioefij wij ',
-    category:
-      'hello world',
+    category: 'hello world',
     rating: 4
   },
   {
     title: 'Ipsum',
     text:
       'owjfe ioioj iojioje oi iowjee ewo ewji weifo ewio jwi ofewjf weio weifj eiwjfwoj eioj ioefj iwofj iowjeio jweiof jweiofj iwojf ioj ow ioefij wijjij wejoweoijioij oijweioj woijwoi jiowj iwjioj iojwioj iowi owioj iojwoij iojoj owij owjfe ioioj iojioje oi iowjee ewo ewji weifo ewio jwi ofewjf weio weifj eiwjfwoj eioj ioefj iwofj iowjeio jweiof jweiofj iwojf ioj ow ioefij wijjij wejoweoijioij oijweioj woijwoi jiowj iwjioj iojwioj iowi owioj iojwoij iojoj owij owjfe ioioj iojioje oi iowjee ewo ewji weifo ewio jwi ofewjf weio weifj eiwjfwoj eioj ioefj iwofj iowjeio jweiof jweiofj iwojf ioj ow ioefij wijjij wejoweoijioij oijweioj woijwoi jiowj iwjioj iojwioj iowi owioj iojwoij iojoj owij owjfe ioioj iojioje oi iowjee ewo ewji weifo ewio jwi ofewjf weio weifj eiwjfwoj eioj ioefj iwofj iowjeio jweiof jweiofj iwojf ioj ow ioefij wijjij wejoweoijioij oijweioj woijwoi jiowj iwjioj iojwioj iowi owioj iojwoij iojoj owij  ',
-    category:
-      'hello world',
+    category: 'hello world',
     rating: 5
   },
   {
@@ -31,10 +29,8 @@ export default [
   },
   {
     title: 'Amet',
-    text:
-      'bert was here',
-    category:
-      'hello world',
+    text: 'bert was here',
+    category: 'hello world',
     rating: 3
   }
 ];

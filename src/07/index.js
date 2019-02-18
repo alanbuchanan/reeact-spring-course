@@ -23,44 +23,27 @@ const Page = ({
     <ParallaxLayer
       offset={idx}
       speed={0}
-      className={cx(
-        'layer',
-        `layer-${idx}`
-      )}
+      className={cx('layer', `layer-${idx}`)}
     />
     <ParallaxLayer
       offset={idx}
-      speed={
-        imageSpeed
-      }
+      speed={imageSpeed}
       className={cx(
         'layer-image',
         `layer-image${idx}`
-      )}
-    >
+      )}>
       <img
         src={imgLink}
-        alt={
-          imgDescription
-        }
+        alt={imgDescription}
         width={150}
       />
     </ParallaxLayer>
     <ParallaxLayer
       offset={idx}
-      speed={
-        textSpeed
-      }
-      className="layer-content"
-    >
-      {title && (
-        <h2>
-          {title}
-        </h2>
-      )}
-      <p className="description">
-        {description}
-      </p>
+      speed={textSpeed}
+      className="layer-content">
+      {title && <h2>{title}</h2>}
+      <p className="description">{description}</p>
     </ParallaxLayer>
   </Fragment>
 );
@@ -69,9 +52,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Parallax
-          pages={3}
-        >
+        <Parallax pages={3}>
           <Page
             idx={0}
             title="Opal"

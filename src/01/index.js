@@ -12,32 +12,19 @@ const svgConfig = {
   duration: 2500
 };
 
-const Wheel = ({
-  stroke
-}) => (
+const Wheel = ({ stroke }) => (
   <svg
     viewBox="0 0 36 36"
     className="wheel"
-    width="100"
-  >
-    <path
-      className="circle-bg"
-      d={circlePath}
-    />
+    width="100">
+    <path className="circle-bg" d={circlePath} />
     <path
       className="circle"
       strokeDasharray={`${stroke}, 100`}
       d={circlePath}
     />
-    <text
-      x="18"
-      y="20.35"
-      className="percentage"
-    >
-      {Math.round(
-        stroke
-      )}
-      %
+    <text x="18" y="20.35" className="percentage">
+      {Math.round(stroke)}%
     </text>
   </svg>
 );
@@ -53,21 +40,10 @@ const App = () => {
         to={{
           stroke: 54
         }}
-        config={
-          svgConfig
-        }
-      >
-        {style => (
-          <Wheel
-            stroke={
-              style.stroke
-            }
-          />
-        )}
+        config={svgConfig}>
+        {style => <Wheel stroke={style.stroke} />}
       </Spring>
-      <h2>
-        Stamina
-      </h2>
+      <h2>Stamina</h2>
       <Spring
         from={{
           stroke: 0
@@ -75,21 +51,10 @@ const App = () => {
         to={{
           stroke: 30
         }}
-        config={
-          svgConfig
-        }
-      >
-        {style => (
-          <Wheel
-            stroke={
-              style.stroke
-            }
-          />
-        )}
+        config={svgConfig}>
+        {style => <Wheel stroke={style.stroke} />}
       </Spring>
-      <h2>
-        Shooting
-      </h2>
+      <h2>Shooting</h2>
       <Spring
         from={{
           stroke: 0
@@ -97,17 +62,8 @@ const App = () => {
         to={{
           stroke: 90
         }}
-        config={
-          svgConfig
-        }
-      >
-        {style => (
-          <Wheel
-            stroke={
-              style.stroke
-            }
-          />
-        )}
+        config={svgConfig}>
+        {style => <Wheel stroke={style.stroke} />}
       </Spring>
     </div>
   );
