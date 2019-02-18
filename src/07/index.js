@@ -31,7 +31,8 @@ const Page = ({
       className={cx(
         'layer-image',
         `layer-image${idx}`
-      )}>
+      )}
+    >
       <img
         src={imgLink}
         alt={imgDescription}
@@ -41,7 +42,8 @@ const Page = ({
     <ParallaxLayer
       offset={idx}
       speed={textSpeed}
-      className="layer-content">
+      className="layer-content"
+    >
       {title && <h2>{title}</h2>}
       <p className="description">{description}</p>
     </ParallaxLayer>

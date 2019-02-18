@@ -30,7 +30,8 @@ class App extends Component {
               transform: 'translateX(0%)',
               height: 'auto'
             }}
-            config={config.stiff}>
+            config={config.stiff}
+          >
             {item => props => (
               <li style={props}>
                 {item.component}

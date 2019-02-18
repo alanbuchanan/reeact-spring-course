@@ -62,7 +62,8 @@ class App extends Component {
               transform:
                 'translateY(100%) scale(0) rotate(-10deg)',
               opacity: 0
-            }}>
+            }}
+          >
             {item => props => (
               <div style={props} className="card">
                 <div className="header">

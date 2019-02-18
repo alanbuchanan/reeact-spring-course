@@ -39,7 +39,8 @@ class App extends Component {
           }}
           leave={{
             height: 0
-          }}>
+          }}
+        >
           {item =>
             item &&
             (props => (

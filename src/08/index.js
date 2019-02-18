@@ -74,7 +74,8 @@ class App extends Component {
                 item.title
                   ? 'show'
                   : 'hide'
-              }>
+              }
+            >
               {props => (
                 <animated.li
                   style={props}
@@ -82,7 +83,8 @@ class App extends Component {
                     this.handleItemClick(
                       item.title
                     )
-                  }>
+                  }
+                >
                   <div className="top-container">
                     <h2>{item.title}</h2>
                     <div>
@@ -105,11 +107,13 @@ class App extends Component {
                     keys={stuff(item).map(
                       (_, i) => i
                     )}
-                    config={config.stiff}>
+                    config={config.stiff}
+                  >
                     {newItem => newProps => (
                       <animated.div
                         style={newProps}
-                        className="list-text">
+                        className="list-text"
+                      >
                         {newItem}
                       </animated.div>
                     )}

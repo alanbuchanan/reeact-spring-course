@@ -9,7 +9,8 @@ const NavBtn = ({ direction, action }) => (
       'navigate',
       `navigate-${direction}`
     )}
-    onClick={action}>
+    onClick={action}
+  >
     <span role="img" aria-label="left">
       {direction === 'left' ? '⏪' : '⏩'}
     </span>
@@ -100,11 +101,13 @@ class App extends Component {
             }100%,0,0)`,
             opacity: 0
           }}
-          items={activeIndex}>
+          items={activeIndex}
+        >
           {idx => props => (
             <div
               className="img-text-container"
-              style={props}>
+              style={props}
+            >
               <img
                 width={200}
                 src={items[idx].imgLink}

@@ -19,7 +19,8 @@ const App = () => {
         }}
         to={{
           transform: 'translateY(0%) scale(1)'
-        }}>
+        }}
+      >
         {props => (
           <button style={props}>Shop Now</button>
         )}

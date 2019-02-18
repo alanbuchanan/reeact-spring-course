@@ -16,7 +16,8 @@ const Wheel = ({ stroke }) => (
   <svg
     viewBox="0 0 36 36"
     className="wheel"
-    width="100">
+    width="100"
+  >
     <path className="circle-bg" d={circlePath} />
     <path
       className="circle"
@@ -40,7 +41,8 @@ const App = () => {
         to={{
           stroke: 54
         }}
-        config={svgConfig}>
+        config={svgConfig}
+      >
         {style => <Wheel stroke={style.stroke} />}
       </Spring>
       <h2>Stamina</h2>
@@ -51,7 +53,8 @@ const App = () => {
         to={{
           stroke: 30
         }}
-        config={svgConfig}>
+        config={svgConfig}
+      >
         {style => <Wheel stroke={style.stroke} />}
       </Spring>
       <h2>Shooting</h2>
@@ -62,7 +65,8 @@ const App = () => {
         to={{
           stroke: 90
         }}
-        config={svgConfig}>
+        config={svgConfig}
+      >
         {style => <Wheel stroke={style.stroke} />}
       </Spring>
     </div>

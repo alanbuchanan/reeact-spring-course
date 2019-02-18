@@ -48,7 +48,8 @@ const AppRouter = () => (
               opacity: 0,
               transform:
                 'translateY(100%) scale(0.5)'
-            }}>
+            }}
+          >
             {item => style => (
               <Switch location={location}>
                 <Route
@@ -57,7 +58,8 @@ const AppRouter = () => (
                   render={props => (
                     <Page
                       {...props}
-                      style={style}>
+                      style={style}
+                    >
                       <p>
                         S.Pellegrino is an Italian
                         natural mineral water
@@ -87,7 +89,8 @@ const AppRouter = () => (
                   render={props => (
                     <Page
                       {...props}
-                      style={style}>
+                      style={style}
+                    >
                       <p>
                         Perrier /ˈpɛri.eɪ/ (French
                         pronunciation: ​[pɛʁ.je])
@@ -112,7 +115,8 @@ const AppRouter = () => (
                   render={props => (
                     <Page
                       {...props}
-                      style={style}>
+                      style={style}
+                    >
                       <p>
                         Badoit is a brand of
                         mineral water obtained

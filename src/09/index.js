@@ -77,7 +77,8 @@ class App extends Component {
           unique
           state={
             this.state.menuOpen ? 'in' : 'out'
-          }>
+          }
+        >
           {props => (
             <nav style={props}>
               <ul>
@@ -89,7 +90,8 @@ class App extends Component {
                       ? 'in'
                       : 'out'
                   }
-                  reverse={!this.state.menuOpen}>
+                  reverse={!this.state.menuOpen}
+                >
                   {trailitem => trailprops => (
                     <li style={trailprops}>
                       {trailitem.content}
